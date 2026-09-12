@@ -67,6 +67,29 @@ L('heb-g2','heb','grammar','⚖️','Verbs: Two Aspects','Perfect vs imperfect',
    MC('The form וַיְהִי (and there was) is…',['imperfect with narrative waw','perfect with conjunction','jussive','participle'],0,'וַ- + imperfect = narrative past: “and there was.”','w-heb-hayah') ]),
 
 /* ================= KOINE GREEK ================= */
+
+L('heb-v3','heb','vocab','🌊','Chaos & Spirit','Genesis 1:2 — the first theodrama',
+ [ "<h4>וְהָאָרֶץ הָיְתָה תֹהוּ וָבֹהוּ</h4><div class='ex'>וְהָאָרֶץ הָיְתָה תֹהוּ וָבֹהוּ וְחֹשֶׁךְ עַל־פְּנֵי תְהוֹם וְרוּחַ אֱלֹהִים מְרַחֶפֶת עַל־פְּנֵי הַמָּיִם</div>“And the earth was without form and void; and darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters.” Verse 2 of the Bible — chaos, darkness, deep — and then, the hovering Spirit.",
+   "<h4>A duet</h4>תֹהוּ (tohu, “formless”) and בֹהוּ (bohu, “void”) are a famous pair — <b>tohu wabohu</b>. The LXX splits them into two Greek adjectives: ἀόρμος (“without form”) and κενή (“empty”) — the same picture, two tongues."],
+ [ M([['w-heb-tohu','formless'],['w-heb-bohu','void'],['w-heb-tehom','the deep'],['w-heb-choshekh','darkness'],['w-heb-ruach','spirit'],['w-heb-mayim','waters']]),
+   MC('The pair תֹהוּ וָבֹהוּ means…',['without form and void','heaven and earth','light and darkness','king and priest'],0,'tohu wabohu — “formless and void.” The LXX says ἀόρμος καὶ κενή — “without form and empty.”','w-heb-tohu'),
+   MC('מְרַחֶפֶת (merachefet) — “the Spirit …”',['hovers (Piel participle)','created (Qal perfect)','slept (Qal imperfect)','spoke (Piel participle)'],0,'Piel participle of רִחַף “to hover, skim” — once in all the OT, and the LXX matches it with ἐπεράζε “skimmeth.”','w-heb-rachaph'),
+   MC('Which word does the LXX render as ἄβυσσος (“the abyss”)?',['t’ehom “the deep”','tohu “formless”','mayim “waters”','ruach “spirit”'],0,'t’ehom, “the deep,” is what the LXX calls ἄβυσσος — the word quoted again in Rom 10:9.','w-heb-tehom'),
+   LS('w-heb-rachaph',['w-heb-rachaph','w-heb-bara','w-heb-ruach'],'That was מְרַחֶפֶת — the Spirit hovering, like a bird skimming the water.'),
+   BD('“and the Spirit of God hovered”',['w-heb-ruach','w-heb-elohim','w-heb-rachaph'],['w-heb-or','w-heb-tohu','w-heb-tob']),
+   VER('v-heb-gen-1-2'),
+   TREE('v-heb-gen-1-2') ]),
+
+L('heb-v4','heb','vocab','🐑','The Shepherd’s Song','Psalm 23 — the verb chain of care',
+ [ "<h4>יְהוָה רֹעִי</h4><div class='ex'>יְהוָה רֹעִי לֹא אֶחְסָר · בִּנְאוֹת דֶּשֶׁא יַרְבִּיצֵנִי עַל־מֵימֵי מְנֻחוֹת יְנַחֵנִי · נַפְשִׁי יְשׁוֹבְבֶן מַעְגְּלֵי צֶדֶק יַנְחֵנִי לְמַעַן שְׁמוֹ</div>“The LORD is my shepherd; I shall not want. He maketh me to lie down in green pastures: he leadeth me beside the still waters. He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake.”",
+   "<h4>Five Shepherd actions</h4>He <b>is</b> (יְהוָה רֹעִי), he <b>makes lie down</b> (יַרְבִּיצֵנִי), he <b>leads</b> (יְנַחֵנִי), he <b>restores</b> (יְשׁוֹבְבֶן), he <b>guides</b> (יַנְחֵנִי). The psalm is a chain of verbs — a whole theology of care."],
+ [ M([['w-heb-roeh','shepherd (my)'],['w-heb-naot','pastures'],['w-heb-deshav','green grass'],['w-heb-rabats','he makes me lie down'],['w-heb-menuchah','still waters'],['w-heb-naphash','my soul']]),
+   MC('יַרְבִּיצֵנִי is…',['Hiphil imperfect 3ms with 1sg suffix (“he makes ME lie down”)','Qal perfect 1cs','Piel passive','Pual participle'],0,'Hiphil is the causative stem: “he causes ME (‑enî) to lie down.” The shepherd does the making.','w-heb-rabats'),
+   MC('צֶדֶק (tsedeq) and the familiar צְדָקָה (tsedeqah) are…',['two abstracts of the same root צדק (righteousness)','unrelated roots','the same word, misspelled','a noun and its verb'],0,'Both from the root צדק: tsedeq, the masculine abstract; tsedeqah, the feminine — one root, two abstracts.','w-heb-tsedeq'),
+   MC('לְמַעַן שְׁמוֹ — “for his name’s sake” — the name here means…',['God’s honor and presence','a secret code word','the psalmist’s name','a list of God’s titles'],0,'The shem of God is his honored presence. The shepherd works for the name’s sake — covenant signature on the care.','w-heb-shem'),
+   LS('w-heb-naphash',['w-heb-naphash','w-heb-ruach','w-heb-or'],'That was נַפְשִׁי — “my soul.”'),
+   BD('“he leadeth me beside the still waters”',['w-heb-nachah','w-heb-al','w-heb-mayim','w-heb-menuchah'],['w-heb-naot','w-heb-or','w-heb-tob']),
+   VER('v-heb-ps-23-2') ]),
 L('grc-alph','grc-nt','alphabet','Ω','Script & Alphabet','24 letters + accents',
  [ "<h4>24 letters</h4>Greek reads left to right. The NT is written in a 24-letter alphabet — many of its letters came to us via Greek.",
    "<h4>Two vowels per sound</h4>α and ο are “short”; ε → ει (long e), ο → ω (long o), ι → υ (y/i). In New Testament Greek, <b>η</b> says long “e.”",
@@ -115,6 +138,18 @@ L('grc-g2','grc-nt','grammar','⏳','Verbs & Tenses','Aspect, not just time',
    MC('δώσειν is…',['an aorist infinitive (“to give”)','a present participle','an aorist imperative','a perfect verb'],0,'The -σειν ending: aorist active infinitive.') ]),
 
 /* ================= ARAMAIC ================= */
+
+L('grc-v3','grc-nt','vocab','☀️','Light of the World','Matthew 5:14 & John 1:5',
+ [ "<h4>ὑμεῖς ἐσθέ τὸ φῶς</h4><div class='ex'>ὑμεῖς ἐσθέ τὸ φῶς τοῦ κόσμου · τὸ φῶς ἐν τῇ σκοτίᾳ λαμπέι· καὶ ἡ σκοτία αὐτὸ οὐ κατέλαβεν</div>“Ye are the light of the world” (Matt 5:14). And John’s prologue: “And the light shineth in darkness; and the darkness comprehended it not” (Jhn 1:5). One light, two witnesses.",
+   "<h4>Articles do the work</h4>τὸ φῶς — “THE light.” The Greek article (ὁ / ἡ / τό) does the work of English “the”; drop it, and the verse loses its weight."],
+ [ M([['w-grc-hymeis','you (pl.)'],['w-grc-este','you are'],['w-grc-phos','light'],['w-grc-kosmos','world'],['w-grc-skotia','darkness'],['w-grc-lampo','it shines']]),
+   MC('ὑμεῖς ἐσθέ — “you are” — is which person and number?',['2nd person plural','1st person singular','3rd person plural','2nd person singular'],0,'hymeis esté — the “you” of the Sermon on the Mount. An identity call: you ARE light.','w-grc-este'),
+   MC('In “τὸ φῶς τοῦ κόσμου,” τοῦ is…',['the genitive article (“of the”)','a noun meaning “head”','a 2nd-person pronoun','an adverb (“now”)'],0,'tou is the genitive of the article: “light OF the world.”','w-grc-tou'),
+   MC('οὐ κατέλαβεν — “comprehended it not” — the negation οὐ…',['negates indicative statements (cf. Hebrew lōʾ, Latin non)','negates subjunctives (that is mē)','is a preposition “outside”','is an interjection “oh”'],0,'ou is the “not” of statements — kin of Hebrew lōʾ and Latin non. (mē belongs to subjunctive moods.)','w-grc-ou'),
+   LS('w-grc-lampo',['w-grc-lampo','w-grc-kosmos','w-grc-phos'],'That was λαμπέι — “it shines.”'),
+   BD('“and the darkness comprehended it not”',['w-grc-kai','w-grc-e','w-grc-skotia','w-grc-auto','w-grc-ou','w-grc-katalaben'],['w-grc-phos','w-grc-este','w-grc-hymeis']),
+   VER('v-grc-mat-5-14'),
+   VER('v-grc-jhn-1-5') ]),
 L('arc-alph','arc','alphabet','א','Script & Alphabet','The square script',
  [ "<h4>One script, two languages</h4>Biblical Aramaic uses the <b>square script</b> — the same letter shapes as Hebrew, written right to left. The difference is in <i>names</i> and a few words: aleph is called “elyph,” shin is “shin,” tav is “taw.”",
    "<h4>Where it lives in the Bible</h4>Native Aramaic appears in Daniel 2:4b–7:28 and Ezra 4:8–6:18 — plus the Aramaic words of Jesus himself in the Gospels."],
@@ -143,6 +178,18 @@ L('arc-g1','arc','grammar','🏛️','Aramaic of the Bible','Daniel 2 & the suff
    MC('פִּשְׁרָא is an Aramaic word that means…',['“interpretation”','“dream”','“exile”','“kingdom”'],0,'“Interpretation” — its ancestor is the Hebrew פָּשָׁר used in Ps 78:2 and Ps 119:116.','w-arc-pishratam') ]),
 
 /* ================= LATIN (VULGATE) ================= */
+
+L('arc-v2','arc','vocab','👑','King & Kingdom','Daniel 2:44 — the court’s Aramaic',
+ [ "<h4>מַלְכָּא → מַלְכוּתָא</h4><div class='ex'>וּבִזְמַן מַלְכֵי יִיחַד אֱלָהָא דִשְׁמַיָּא מַלְכוּתָא וְלָא תִפְרֵץ לְעָלְמָא</div>“And in the days of these kings shall the God of heaven set up a kingdom, which shall never be destroyed.” The Aramaic of the royal court — and the word behind “thy kingdom come.”",
+   "<h4>King → Kingdom</h4>malkā (“king”) + a feminine ending = malkhūtā (“kingdom”). One root (מלק) builds both words. In Daniel’s vision the kings of the world share the stage — and the God of heaven brings ONE kingdom."],
+ [ M([['w-arc-malka','king'],['w-arc-malkhuta','kingdom'],['w-arc-elaha','God'],['w-arc-shamaya','heaven'],['w-arc-bizman','in the time of'],['w-arc-lelama','forever']]),
+   MC('מַלְכוּתָא (“kingdom”) is built from…',['the root מלק (“king”) + a feminine ending','the word šamaya (“heaven”)','a separate root meaning “reign”','the Hebrew word for “city”'],0,'malkā (king) → malkhūtā (kingdom): same root, one ending. “Thy kingdom come” is Aramaic malkhūtkā.','w-arc-malkhuta'),
+   MC('דִּי (dī) in “אֱלָהָא דִשְׁמַיָּא” means…',['of (“the God of heaven”)','and','not','therefore'],0,'dī is Aramaic’s possessive/relative particle — “the God OF heaven,” “a kingdom THAT …”','w-arc-di'),
+   MC('יִיחַד (yiḥaḏ) — “shall set up” — is from…',['יָחַד “to be one, to join”','מָלַךְ “to reign”','יָשַׁב “to sit”','יָדַע “to know”'],0,'“Set up a kingdom” literally means “make one / join”: the kingdom of God is a making-one.','w-arc-yikhud'),
+   MC('וְלָא תִפְרֵץ — “which shall not be destroyed” — the negation לָא is…',['the Aramaic “not” (kin of Hebrew lōʾ)','a preposition “to”','the word “no,” used only in oaths','a relative particle'],0,'lā — the Aramaic “not.” The kingdom that shall not be broken: forever, lelama.','w-arc-lo'),
+   BD('“the God of heaven set up a kingdom”',['w-arc-elaha','w-arc-di','w-arc-shamaya','w-arc-yikhud','w-arc-malkhuta'],['w-arc-bizman','w-arc-malka','w-arc-we']),
+   VER('v-arc-dan-2-44'),
+   TREE('v-arc-dan-2-44') ]),
 L('lat-alph','lat','alphabet','✠','Script & Alphabet','Church Latin sounds',
  [ "<h4>One alphabet, one pronunciation</h4>The Latin alphabet is the one your keyboard uses. Ecclesiastical (Church) Latin has a few rules that make it sound Italian-adjacent.",
    "<h4>The sound rules</h4><b>c</b> before e/i = “ch” (centum → CHENT-um). <b>v</b> = “w” (Vulgate → WUL-gate). <b>h</b> is always silent. Double consonants are both pronounced (pāscit → PAAS-chit)."],
@@ -176,15 +223,27 @@ L('lat-g1','lat','grammar','📐','Cases & Tenses','From Psalm 23 & John 1',
  [ MC('DEUM (John 1:1) is which case?',['Accusative','Nominative','Ablative','Genitive'],0,'-um marks the masculine/neuter accusative of the 2nd declension — “the Word was with GOD.”','w-lat-deus'),
    MC('PASCIT in “Dominus pascit me” is…',['present indicative 3sg (“he shepherds”)','perfect 3sg','future 3sg','imperfect 3sg'],0,'Present, 3sg — the Shepherd’s care is ongoing: “The LORD shepherds me (now, always).”','w-lat-pascere'),
    MC('DEERIT (“I shall not want”) is which tense?',['Future','Perfect','Present','Imperfect'],0,'Future of dēesse: “it shall be lacking.” The Shepherd’s promise is forward-looking.','w-lat-deesse'),
-   MC('AETERNAM (John 3:16) is…',['feminine accusative singular','masculine nominative singular','neuter ablative','feminine genitive'],0,'It must match vitam: fem. acc. sg. — “eternal life” = vitam aeternam.') ])
+   MC('AETERNAM (John 3:16) is…',['feminine accusative singular','masculine nominative singular','neuter ablative','feminine genitive'],0,'It must match vitam: fem. acc. sg. — “eternal life” = vitam aeternam.') ]),
+
+L('lat-v3','lat','vocab','🐏','The Shepherd','Psalm 23:2 in the Vulgate',
+ [ "<h4>IN PASCUIS … PASCET</h4><div class='ex'>In pascuis, ubi habitat me, pascet; super aquam quietis, ibi me convertet.</div>“He maketh me to lie down in green pastures: he leadeth me beside the still waters.” The shepherd-verb appears twice — pascuus (pastures) and pascet (he shall feed) — from one root, pāscere.",
+   "<h4>Adverbs place the scene</h4>UBI (“where”) opens the first clause; IBI (“there”) opens the second. One adverb pair draws the whole picture: WHERE he makes me dwell, THERE he refreshes me."],
+ [ M([['w-lat-pascuus','pastures'],['w-lat-ubi','where'],['w-lat-habitat','he dwells'],['w-lat-pascet','he shall feed'],['w-lat-super','upon; beside'],['w-lat-convertet','he shall refresh']]),
+   MC('PASCUIS (“in green pastures”) is…',['ablative plural of pāscuus','nominative singular','accusative plural','genitive singular'],0,'-is marks the ablative plural — the case of location: “IN pastures.”','w-lat-pascuus'),
+   MC('PASCET (“he shall feed”) is which tense?',['future (the -et ending)','present','perfect','imperfect'],0,'pāscet — future 3sg: the shepherd’s promise looks forward.','w-lat-pascet'),
+   MC('UBI and IBI are…',['adverbs: “where” and “there”','prepositions','nouns (“water,” “rest”)','conjunctions'],0,'ubi = where (the place in question); ibi = there (that place). Two little words carry the whole scene.','w-lat-ubi'),
+   MC('QUIETIS (“of stillness”) is which case?',['genitive','ablative','accusative','dative'],0,'quiētis is the genitive of quietēs “stillness” — “water OF stillness” (aquam quietis); the genitive dresses the noun.','w-lat-quietus'),
+   BD('“beside the still waters he refreshes me”',['w-lat-super','w-lat-aqua','w-lat-quietus','w-lat-mi','w-lat-convertet'],['w-lat-ubi','w-lat-pascet','w-lat-et']),
+   VER('v-lat-ps-23-2'),
+   TREE('v-lat-ps-23-2') ])
 ];
 
 /* ---------- path per language (order of the learning path, §5) ---------- */
 var LABELS = {
-  'heb-alph':'Alphabet','heb-v1':'Genesis 1:1','heb-v2':'Light','heb-g1':'Nouns','heb-g2':'Verbs',
-  'grc-alph':'Alphabet','grc-v1':'John 1:1','grc-v2':'John 3:16','grc-g1':'Cases','grc-g2':'Tenses',
-  'arc-alph':'Alphabet','arc-v1':'Phrasebook','arc-g1':'Daniel 2',
-  'lat-alph':'Alphabet','lat-v1':'John 1:1','lat-v2':'John 3:16','lat-g1':'Cases & Tenses'
+  'heb-alph':'Alphabet','heb-v1':'Genesis 1:1','heb-v2':'Light','heb-v3':'Chaos','heb-v4':'Shepherd','heb-g1':'Nouns','heb-g2':'Verbs',
+  'grc-alph':'Alphabet','grc-v1':'John 1:1','grc-v2':'John 3:16','grc-v3':'Light','grc-g1':'Cases','grc-g2':'Tenses',
+  'arc-alph':'Alphabet','arc-v1':'Phrasebook','arc-v2':'Kingdom','arc-g1':'Daniel 2',
+  'lat-alph':'Alphabet','lat-v1':'John 1:1','lat-v2':'John 3:16','lat-v3':'Shepherd','lat-g1':'Cases & Tenses'
 };
 function pathFor(lang){
   var les = LESSONS.filter(function(l){ return l.lang === lang; });

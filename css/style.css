@@ -577,3 +577,60 @@ select.sel{background:var(--panel2);border:1px solid var(--line2);color:var(--in
   #app{padding-bottom:calc(var(--nav-h) + 30px);}
   .path-node{width:76px;height:76px;margin:14px 0;}
 }
+
+/* ============================================================
+   MOBILE OVERFLOW GUARDS — “good bootstrap” pass
+   Long script lines, RTL strings, pills, chips and tables must
+   wrap or scroll — never bleed past the right edge on a phone.
+   Size clamps below are capped, so desktop sizes are untouched.
+   ============================================================ */
+html{ -webkit-text-size-adjust:100%; }
+body{ overflow-x:hidden; }               /* last-resort guard */
+
+/* long unbreakable script strings may break inside the word */
+.vline.origin .vw, .vline.translit, .vline.english,
+.info-card .ex, .etym, .wc-script, .wc-translit,
+.srs-front, .lq-main .script, .opt .script, .match-item .script,
+.token .tmain, .parse-chip, .family-row .fscript, .res-row .rscript,
+.tree .tw, .verse-ref { overflow-wrap:anywhere; }
+.info-card .ex{ max-width:100%; }
+
+/* flex children may shrink so inner text can wrap or ellipsize */
+.occ-row, .family-row, .weak-row, .res-row, .pack-row, .set-row,
+.fam-chip, .lb-row { min-width:0; }
+.occ-row .otext, .family-row .fgloss, .family-row .fscript,
+.weak-row .wscript, .res-row .rmeta, .res-row .rscript,
+.set-row .sk, .pack-row .pname, .fam-chip .fn, .chip, .tag { min-width:0; }
+.family-row .fgloss{ flex:1 1 auto; }
+.weak-row > span{ flex-wrap:wrap; }
+
+@media (max-width:899px){
+  .wc-script{ font-size:clamp(30px, 8.5vw, 44px); }
+  .wc-script.ltr{ font-size:clamp(28px, 7.6vw, 40px); }
+  .srs-front{ font-size:clamp(30px, 9vw, 42px); }
+  .srs-front.ltr{ font-size:clamp(28px, 8.2vw, 38px); }
+  .lq-main .script{ font-size:clamp(24px, 7vw, 30px); }
+  .opt .script{ font-size:clamp(17px, 5vw, 21px); }
+  .vline.origin .vw{ font-size:clamp(20px, 5.6vw, 24px); }
+  .info-card .ex{ font-size:clamp(16px, 4.6vw, 20px); }
+  .token .tmain{ font-size:clamp(16px, 4.6vw, 19px); }
+  .parse-chip{ font-size:clamp(16px, 4.6vw, 19px); }
+  .res-row .rscript{ flex:0 1 92px; min-width:0; font-size:clamp(16px, 4.8vw, 21px); }
+  .weak-row .wscript{ flex:0 1 78px; min-width:0; }
+}
+@media (max-width:480px){
+  .topbar{ padding:8px 10px; gap:6px; }
+  .topbar .brand span{ display:none; }
+  .topbar .brand b{ font-size:14px; letter-spacing:1.6px; }
+  .stat-pill{ padding:4px 7px; font-size:11.5px; gap:3px; }
+  .stat-pill .ico{ font-size:12px; }
+  .disp-toggle{ flex-wrap:wrap; }
+  .result .rstats{ gap:8px; }
+  .result .rstat{ min-width:0; flex:1 1 30%; }
+  .set-row .sel{ max-width:44vw; }
+  .match-item{ font-size:12.5px; }
+}
+/* wide tables scroll inside their card instead of breaking it */
+.table-scroll{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.table-scroll .otable{ min-width:560px; }
+#toast{ max-width:calc(100vw - 20px); }

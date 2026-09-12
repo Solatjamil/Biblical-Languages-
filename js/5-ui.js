@@ -1472,7 +1472,7 @@ function screenOwner(){
     '<div class="card-title mt12"><span class="ico">🛠️</span> Owner dashboard</div>' +
     '<div class="small dim">Content-health view over your own data — where to prioritize next. (Single-device prototype: “global” aggregates = this device.)</div>' +
     '<div class="panel"><div class="card-title"><span class="ico">📊</span> Content coverage</div>' +
-      '<table class="otable"><tr><th>Lang</th><th>Book</th><th>Words</th><th>Audio</th><th>Ety</th><th>Gloss</th><th>Verses</th><th>Coverage</th></tr>' +
+      '<div class="table-scroll"><table class="otable"><tr><th>Lang</th><th>Book</th><th>Words</th><th>Audio</th><th>Ety</th><th>Gloss</th><th>Verses</th><th>Coverage</th></tr>' +
       cov.map(function(c){
         var audioPct = Math.round(100 * c.words_with_audio / Math.max(1, c.words_total));
         var etyPct = Math.round(100 * c.words_with_etymology / Math.max(1, c.words_total));
@@ -1482,7 +1482,7 @@ function screenOwner(){
           '<td class="num ' + (etyPct < 60 ? 'gap' : 'good') + '">' + etyPct + '%</td>' +
           '<td class="num ' + (gPct < 50 ? 'gap' : 'good') + '">' + gPct + '%</td>' +
           '<td class="num">' + c.verses + '</td><td class="num ' + (c.coverage_pct < 80 ? 'gap' : 'good') + '">' + c.coverage_pct + '%</td></tr>';
-      }).join('') + '</table>' +
+      }).join('') + '</table></div>' +
       '<div class="small faint mt8">Red = gap to fill next (audio_clip / etymology narrative / glossary_entry rows).</div>' +
     '</div>' +
     (diff.length ? '<div class="panel"><div class="card-title"><span class="ico">📉</span> Hardest words (aggregated from learning_event)</div>' +

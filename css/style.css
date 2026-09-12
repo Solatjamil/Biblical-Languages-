@@ -452,3 +452,128 @@ select.sel{background:var(--panel2);border:1px solid var(--line2);color:var(--in
 @media (min-width:560px){
   #app{border-left:1px solid var(--line);border-right:1px solid var(--line);min-height:100vh;}
 }
+
+/* ============================================================
+   DESKTOP / WEBSITE LAYOUT (>= 900px)
+   Mobile (<900px) stays exactly as the native-app layout.
+   ============================================================ */
+@media (min-width:900px){
+  body{font-size:16px;}
+  #app{
+    max-width:1320px;padding:0 30px 46px;
+    display:flex;flex-direction:column;
+  }
+  /* header */
+  .topbar{padding:16px 4px;position:sticky;order:1;}
+  .topbar .brand b{font-size:20px;letter-spacing:3.5px;}
+  .topbar .brand span{font-size:10.5px;}
+  .stat-pill{padding:7px 14px;font-size:14px;}
+  /* bottom nav -> centered site navigation under the header */
+  .bottomnav{
+    position:static;order:2;
+    width:auto;max-width:700px;margin:12px auto 30px;
+    height:auto;background:var(--panel);
+    border:1px solid var(--line2);border-radius:16px;
+    padding:7px;box-shadow:0 12px 34px rgba(0,0,0,.4);
+  }
+  .bottomnav button{
+    flex:0 1 auto;padding:9px 24px;font-size:11.5px;border-radius:11px;gap:7px;
+  }
+  .bottomnav button .nic{font-size:19px;}
+  .bottomnav button:hover{color:var(--ink-dim);background:var(--panel2);}
+  .bottomnav button.active{background:linear-gradient(180deg, rgba(201,162,39,.22), rgba(201,162,39,.09));}
+  .bottomnav button.active::before{display:none;}
+  .bottomnav .badge-dot{top:6px;right:8px;}
+  /* page content below the nav */
+  #app > div:not(.topbar){order:3;flex:1;width:100%;min-width:0;}
+
+  /* language tabs: full-width row */
+  .langtabs{max-width:1100px;margin:0 auto 12px;}
+  .langtabs button{flex:1;min-width:0;border-radius:12px;padding:10px 8px;}
+
+  /* HOME — two column website layout */
+  .home-grid{display:flex;flex-direction:column;}
+  .hg-hero{order:1;}.hg-verse{order:2;}.hg-path{order:3;}.hg-ad{order:4;}.hg-note{order:5;}
+  .home-grid{
+    display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);
+    grid-template-rows:auto auto auto;gap:16px 22px;align-items:start;
+  }
+  .hg-path{grid-column:1;grid-row:1 / span 3;order:0;}
+  .hg-hero{grid-column:2;grid-row:1;order:0;}
+  .hg-verse{grid-column:2;grid-row:2;order:0;}
+  .hg-note{grid-column:2;grid-row:3;order:0;}
+  .hg-ad{grid-column:1 / span 2;grid-row:4;order:0;}
+  .hg-path .path{flex-direction:row;flex-wrap:wrap;justify-content:center;padding-top:6px;}
+  .hg-path .path-node{margin:16px 34px;}
+  .hg-hero.hero-strip{padding:24px 26px;}
+  .hg-hero.hero-strip h2{font-size:27px;}
+  .hg-hero.hero-strip p{font-size:14px;}
+  .hg-verse{padding:18px 20px;}
+  .hg-verse .verse-ref{font-size:16.5px;}
+  .hg-verse .serif{font-size:16px !important;}
+
+  /* wide screens: verse study & word breakdown */
+  .wide-wrap{max-width:1020px;margin:0 auto;}
+  .verse-block{padding:28px 32px;border-radius:18px;}
+  .verse-block .vline.origin{font-size:31px !important;}
+  .verse-block .vline.translit{font-size:17px !important;}
+  .verse-block .vline.english{font-size:19.5px !important;}
+  .vline.origin .vw{font-size:31px !important;}
+  .wordcard{max-width:940px;}
+  .morph-grid{grid-template-columns:repeat(3,1fr);}
+
+  /* narrow centered screens: lists, lexicon, translate, about */
+  .narrow-wrap{max-width:800px;margin:0 auto;}
+
+  /* lesson-style centered screens: SRS, quiz */
+  .srs-wrap{max-width:760px;margin:0 auto;}
+  .srs-front{font-size:52px;}
+
+  /* profile — balanced two-column content */
+  .profile-grid{column-count:2;column-gap:12px;}
+  .profile-grid > *{break-inside:avoid;margin-bottom:12px;}
+  .badge-grid{grid-template-columns:repeat(4,1fr);}
+
+  /* lesson player */
+  #lesson-root{
+    max-width:780px;
+    border-left:1px solid var(--line);border-right:1px solid var(--line);
+    box-shadow:0 0 90px rgba(0,0,0,.55);
+  }
+  .ltop{padding:20px 28px 10px;}
+  .lbody{padding:14px 40px 150px;}
+  .lfooter{padding:20px 40px;min-height:120px;}
+  .lq-main{font-size:24px;}
+  .opt{padding:15px 18px;font-size:16px;}
+  .opt .script{font-size:24px;}
+  .token .tmain{font-size:21px;}
+  .info-card{font-size:16px;}
+
+  /* modal: centered card instead of bottom sheet */
+  .modal-root{align-items:center;padding:28px;}
+  .modal{
+    max-width:660px;border-radius:18px;
+    border:1px solid var(--line2);border-top:2px solid var(--gold);
+    max-height:86vh;animation:fadein .22s ease;
+  }
+  @keyframes fadein{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+  /* toast + ads */
+  #toast{bottom:32px;}
+  .ad-slot{min-height:100px;display:flex;flex-direction:column;justify-content:center;}
+  .ad-slot .adt{font-size:13.5px;}
+
+  /* owner table */
+  .otable{font-size:13px;}
+  .otable th,.otable td{padding:8px 10px;}
+
+  /* about */
+  .about-logo .al1{font-size:30px;}
+  .family-chips{gap:9px;}
+}
+
+/* tablet: keep the app frame, just breathe a little */
+@media (min-width:600px) and (max-width:899px){
+  #app{padding-bottom:calc(var(--nav-h) + 30px);}
+  .path-node{width:76px;height:76px;margin:14px 0;}
+}

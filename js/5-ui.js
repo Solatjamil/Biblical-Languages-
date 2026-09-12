@@ -263,7 +263,8 @@ function screenHome(){
       return '<button data-lang="' + l + '" class="' + (l === lang ? 'active' : '') + '"><span class="lname">' + E(la.short) + '</span><span class="lsub">' + E(la.note.split('·')[0]) + '</span></button>';
     }).join('') + '</div>' +
 
-    '<div class="hero-strip">' +
+    '<div class="home-grid">' +
+    '<div class="hg-hero hero-strip">' +
       '<div class="center" style="margin-bottom:8px;font-size:11px;letter-spacing:2px;color:var(--ink-faint)">A BIBLICAL MINISTRY PROJECT</div>' +
       '<h2 class="center">Verbum Origo</h2>' +
       '<p class="center">Learn the Bible in its original tongues — Hebrew, Koine Greek, Aramaic and Vulgate Latin — word by word, root by root.</p>' +
@@ -274,18 +275,19 @@ function screenHome(){
       '</div>' +
     '</div>' +
 
-    '<div class="panel">' +
+    '<div class="hg-verse panel">' +
       '<div class="card-title"><span class="ico">📖</span> Today’s verse <span class="chip gold" style="margin-left:auto">' + E(DB.Langs[todayVerse.language_code].short) + '</span></div>' +
       '<div class="verse-ref">' + E(DB.refLabel(todayVerse)) + ' · ' + DB.sourceLabel(todayVerse.source_text) + '</div>' +
       '<div class="serif" style="margin-top:6px;font-size:14.5px;color:var(--ink-dim)">' + E(todayVerse.text_en) + '</div>' +
       '<button class="btn small gold mt8" data-act="open-verse" data-vid="' + todayVerse.verse_id + '">Study it word by word →</button>' +
     '</div>' +
 
-    '<div class="card-title" style="padding:0 4px"><span class="ico">🧭</span> ' + E(DB.Langs[lang].short) + ' track</div>' +
-    renderPath(lang) +
-    adSlot('banner') +
-    '<div class="panel hollow center" style="border:none">' +
+    '<div class="hg-path"><div class="card-title" style="padding:0 4px"><span class="ico">🧭</span> ' + E(DB.Langs[lang].short) + ' track</div>' +
+    renderPath(lang) + '</div>' +
+    '<div class="hg-ad">' + adSlot('banner') + '</div>' +
+    '<div class="hg-note panel hollow center" style="border:none">' +
       '<div class="small faint">Part of the <a href="#/about">Saul’s Podship</a> family · <a href="#/about">saulspodship.com</a></div>' +
+    '</div>' +
     '</div>' +
     '</div>' + bottomnav('home');
 
@@ -346,7 +348,7 @@ function wirePathNodes(root, lang){
 /* verses list per language */
 function screenVerses(lang){
   var vs = PATH.versesForLang(lang);
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="narrow-wrap" style="padding:14px">' +
     '<button class="btn small ghost" data-back>← Track</button>' +
     '<div class="card-title mt12"><span class="ico">📖</span> Verse-by-Verse Study — ' + E(DB.Langs[lang].short) + '</div>' +
     '<div class="small dim" style="margin-bottom:10px">Every word is tappable and opens the full breakdown card. Multiple source texts (MT/DSS, TR/NA28) are toggleable.</div>' +
@@ -400,7 +402,7 @@ function screenVerse(vid, hlWid){
     }).join(' ');
   }
 
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="wide-wrap" style="padding:14px">' +
     '<button class="btn small ghost" data-back>← Verses</button>' +
     '<div class="card-title mt12"><span class="ico">📖</span> <span class="verse-ref">' + E(DB.refLabel(v)) + '</span></div>' +
     '<div class="small dim">' + E(DB.Langs[lang].name) + ' · <span class="chip">' + E((DB.Books[v.book_id]||{}).name || v.book_id) + '</span></div>' +
@@ -468,7 +470,7 @@ function screenVerseHomeFallback(){ nav('#/'); }
 function screenWord(wid, from){
   var w = DB.w(wid);
   if (!w){ nav('#/'); return; }
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="wide-wrap" style="padding:14px">' +
     (from ? '<button class="btn small ghost" data-back>← Verse</button>' : '<button class="btn small ghost" data-back>← Back</button>') +
     '<div class="mt12">' + wordCard(wid) + '</div>' +
     '</div>' + bottomnav('lexicon');
@@ -875,7 +877,7 @@ function screenSrs(){
   var pct = Math.round(100 * SRS.i / q.length);
   var m = w.morphology || {};
 
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="srs-wrap" style="padding:14px">' +
     '<div class="card-title"><span class="ico">🔁</span> Spaced repetition <span class="due-chip" style="margin-left:auto">' + (SRS.i + 1) + ' / ' + q.length + '</span></div>' +
     '<div class="progress-line"><i style="width:' + pct + '%"></i></div>' +
     '<div class="panel" style="text-align:center;padding:26px 14px">' +
@@ -921,7 +923,7 @@ function screenSrs(){
 }
 function finishSRS(){
   var fresh = ENGINE.evalBadges();
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="srs-wrap" style="padding:14px">' +
     '<div class="result"><div class="rico">🔁</div><h2>Review complete</h2>' +
     '<div class="rstats"><div class="rstat"><b>' + SRS.good + '</b><span>Recalled</span></div><div class="rstat"><b>' + SRS.again + '</b><span>Again</span></div><div class="rstat"><b>+' + SRS.xp + '</b><span>XP</span></div></div>' +
     '<div class="small dim center">Intervals updated by SM-2: good answers stretch your next review; “again” brings words back quickly.</div>' +
@@ -1006,7 +1008,7 @@ function screenQuiz(){
   }
   if (QZ.i >= QZ.qs.length) return quizResult();
   var q = QZ.qs[QZ.i];
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="srs-wrap" style="padding:14px">' +
     '<button class="btn small ghost" id="qz-exit">Exit</button>' +
     '<div class="card-title mt12"><span class="ico">🎯</span> Quiz — ' + E(DB.Langs[QZ.lang].short) + ' <span class="chip" style="margin-left:auto">' + (QZ.i + 1) + ' / ' + QZ.qs.length + '</span></div>' +
     '<div class="progress-line"><i style="width:' + Math.round(100 * QZ.i / QZ.qs.length) + '%"></i></div>' +
@@ -1080,7 +1082,7 @@ function screenParse(){
   var lang = APP.parseLang || curLang();
   if (!PS || PS.lang !== lang){
     var vs = PATH.versesForLang(lang);
-    var html = topbar() + '<div style="padding:14px">' +
+    var html = topbar() + '<div class="narrow-wrap" style="padding:14px">' +
       '<button class="btn small ghost" data-back>← Track</button>' +
       '<div class="card-title mt12"><span class="ico">🧩</span> Verse Parsing — ' + E(DB.Langs[lang].short) + '</div>' +
       '<div class="small dim" style="margin-bottom:10px">Pick a passage. Tap each word and name its parsing before the answer reveals. +15 XP per correct parse.</div>' +
@@ -1104,7 +1106,7 @@ function screenParse(){
   var v = DB.Verses[PS.vid];
   var rows = DB.vw(PS.vid);
   var solved = rows.filter(function(rw){ return PS.done[rw.word_id + ':' + rw.position]; }).length;
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="wide-wrap" style="padding:14px">' +
     '<button class="btn small ghost" id="ps-exit">← Passages</button>' +
     '<div class="card-title mt12"><span class="ico">🧩</span> Parsing — <span class="verse-ref">' + E(DB.refLabel(v)) + '</span></div>' +
     '<div class="progress-line"><i style="width:' + Math.round(100 * solved / PS.total) + '%"></i></div>' +
@@ -1200,7 +1202,7 @@ function lexSearch(){
 }
 function screenLexicon(){
   var res = lexSearch();
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="narrow-wrap" style="padding:14px">' +
     '<div class="card-title"><span class="ico">🔎</span> Lexicon & Concordance</div>' +
     '<div class="small dim" style="margin-bottom:8px">Search script, transliteration, English or Strong’s number (H430 · G3056). Every result links to full occurrences.</div>' +
     '<div class="searchbox"><input id="lex-input" placeholder="e.g. λόγος · barā · light · H776" value="' + E(LEX.q) + '"></div>' +
@@ -1253,7 +1255,7 @@ function screenTranslate(){
       '<div class="rsub">' + E(w.translit) + (w.strong_number ? ' · ' + (w.language_code.indexOf('grc') === 0 || w.language_code === 'lxx' ? 'G' : 'H') + w.strong_number : '') + '</div></div>' +
       '<div style="text-align:right">' + badge + '<div class="small" style="color:var(--gold);margin-top:4px">full breakdown →</div></div></div>';
   }
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="narrow-wrap" style="padding:14px">' +
     '<div class="card-title"><span class="ico">🔁</span> Translation Tool</div>' +
     '<div class="small dim" style="margin-bottom:10px">Type in English, Roman Urdu, Urdu or Hindi — get the biblical word in Hebrew, Koine Greek, Aramaic or Vulgate Latin. <b>Dictionary lookup only — never AI-guessed</b> (§11).</div>' +
     '<div class="seg" style="margin-bottom:6px">' +
@@ -1318,6 +1320,7 @@ function screenProfile(){
   }).concat([{ me:true, name:'You', ico:'✦', xp:u.xp }]).sort(function(a, b){ return b.xp - a.xp; });
 
   var html = topbar() + '<div style="padding:14px">' +
+    '<div class="profile-grid">' +
     '<div class="panel" style="display:flex;gap:14px;align-items:center">' +
       '<div class="avatar">✦</div>' +
       '<div style="flex:1"><div class="serif" style="font-size:18px">Saul’s Student</div>' +
@@ -1402,6 +1405,7 @@ function screenProfile(){
     '<div class="panel hollow center" style="border:none">' +
       '<a href="#/about" class="serif" style="color:var(--gold)">✦ About Verbum Origo · Saul’s Podship ✦</a>' +
     '</div>' +
+    '</div>' +
     '</div>' + bottomnav('profile');
   var root = document.getElementById('app');
   root.innerHTML = html;
@@ -1463,7 +1467,7 @@ function screenOwner(){
   var diff = DB.difficultyStats().slice(0, 8);
   var ev = {};
   DB.state.events.forEach(function(e){ ev[e.event_type] = (ev[e.event_type] || 0) + 1; });
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="wide-wrap" style="padding:14px">' +
     '<button class="btn small ghost" data-back>← Profile</button>' +
     '<div class="card-title mt12"><span class="ico">🛠️</span> Owner dashboard</div>' +
     '<div class="small dim">Content-health view over your own data — where to prioritize next. (Single-device prototype: “global” aggregates = this device.)</div>' +
@@ -1516,7 +1520,7 @@ function screenOwner(){
    ABOUT — Saul's Podship branding & ownership
    ============================================================ */
 function screenAbout(){
-  var html = topbar() + '<div style="padding:14px">' +
+  var html = topbar() + '<div class="narrow-wrap" style="padding:14px">' +
     '<div class="about-logo"><div class="al1">✦ VERBUM ORIGO ✦</div><div class="al2">Biblical Original Languages · v1.0</div></div>' +
     '<div class="hero-strip"><h2 class="center" style="font-size:16px">A Biblical Ministry Project</h2>' +
       '<p class="center">Part of the Saul’s Podship scriptorium — a rigorous digital library for Christian exegesis, historic theology and scripture analysis. Verbum Origo teaches the four biblical languages in the context of Scripture itself: word by word, root by root, verse by verse.</p></div>' +

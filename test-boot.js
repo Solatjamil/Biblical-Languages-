@@ -80,6 +80,7 @@ const routes = [
   '#/lesson/heb-alph', '#/lesson/heb-v1', '#/lesson/heb-g2',
   '#/lesson/grc-v1', '#/lesson/arc-v1', '#/lesson/lat-v2',
   '#/lesson/heb-v3', '#/lesson/heb-v4', '#/lesson/grc-v3', '#/lesson/arc-v2', '#/lesson/lat-v3',
+  '#/lesson/heb-v5', '#/lesson/heb-v6', '#/lesson/grc-v4', '#/lesson/grc-v5', '#/lesson/arc-v3', '#/lesson/lat-v4',
   '#/srs', '#/quiz', '#/parse', '#/lexicon', '#/translate',
   '#/profile', '#/owner', '#/about', '#/verses/grc-nt', '#/verses/arc', '#/verses/lat'
 ];

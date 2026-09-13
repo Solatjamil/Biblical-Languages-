@@ -139,6 +139,29 @@ L('grc-g2','grc-nt','grammar','⏳','Verbs & Tenses','Aspect, not just time',
 
 /* ================= ARAMAIC ================= */
 
+
+L('heb-v5','heb','vocab','✨','Let There Be Light','Genesis 1:3-4 & Psalm 119:105',
+ [ "<h4>וַיֹּאמֶר אֱלֹהִים לִמְהִי אוֹר</h4><div class='ex'>וַיֹּאמֶר אֱלֹהִים לִמְהִי אוֹר וַיְהִי אוֹר</div>“And God said, Let there be light: and there was light.” The jussive limhî — “let there be” — is the shortest creation engine in the Bible: a verb, and it is.",
+   "<h4>Lamp and light</h4>Psalm 119:105 turns the cosmic light into a pocket lamp: “Your word is a LAMP (nēr) unto my feet, and a LIGHT (ʾôr) unto my path (maagalî).” The LXX keeps both: lampas and phōs. One family — light — in three tongues."],
+ [ M([['w-heb-or','light'],['w-heb-ner','lamp'],['w-heb-rgal','my foot'],['w-heb-magal','my path'],['w-heb-l','to; unto'],['w-heb-rah','he saw']]),
+   MC('לִמְהִי (limhî) — “let there be” — is which form?',['jussive of “to be”','perfect 3ms','imperfect 1cs','cohortative plural'],0,'The jussive: a verb of “letting be.” God says the word, and the light is.','w-heb-limhi'),
+   MC('נֵר (nēr) and אוֹר (ʾôr) are…',['“lamp” (the object) and “light” (the substance)','the same word, two spellings','“fire” and “sun”','a noun and its plural'],0,'nēr is the lamp that holds it; ʾôr is the light itself. The LXX keeps the pair: lampas + phōs; the Vulgate: lumen + lux.','w-heb-ner'),
+   MC('מַעְגָּלִי (maagalî, “my path”) is the SAME root as which Psalm 23 word?',['maagalei — “paths” (Ps 23:3)','roeh — “shepherd”','menuchot — “rest”','deshav — “grass”'],0,'From עגל “to circle”: life as a right-circled walk — Ps 23:3 and Ps 119:105 share the root.','w-heb-magal'),
+   LS('w-heb-ner',['w-heb-ner','w-heb-or','w-heb-magal'],'That was נֵר — the lamp of the temple courts, and of the word.'),
+   BD('“your word is a lamp unto my feet”',['w-heb-davar','w-heb-ner','w-heb-l','w-heb-rgal'],['w-heb-or','w-heb-magal','w-heb-tob']),
+   VER('v-heb-gen-1-3'),
+   VER('v-heb-ps-119-105') ]),
+
+L('heb-v6','heb','vocab','🦅','Wings Like Eagles','Isaiah 40:31 — the strength exchange',
+ [ "<h4>כִּי יָגוּ יַחֲלוּ</h4><div class='ex'>כִּי יָגוּ בְיְהוָה יַחֲלוּ כֹחַ יַרְחִפוּ כַּאֵילִים יִרְצוּ וְלֹא יִכְלֶה וְהָלְכוּ וְלֹא יָעֵפוּ</div>“But they that wait upon the LORD shall renew their strength; they shall mount up with wings, as eagles; they shall run, and not be weary; and they shall walk, and not faint.”",
+   "<h4>Four pictures, one promise</h4>Soar (yarḥîpû — the same root as the hovering Spirit of Gen 1:2!), run, walk — and three negations: not weary, not spent, not faint. Waiting is not standing still; it is changing the source of the strength."],
+ [ M([['w-heb-yagu','they wait'],['w-heb-yachalu','renew strength'],['w-heb-yarhipu','they soar'],['w-heb-kanaf','wings'],['w-heb-ayit','eagles'],['w-heb-yirtsa','they run']]),
+   MC('יַרְחִפוּ “they shall mount up” is built from the SAME root as which Genesis 1:2 word?',['merachefet — the hovering Spirit','bara — created','ruach — spirit','mayim — waters'],0,'The רחפ of the hovering Spirit becomes the soar of the eagle: the same root, from skimming to lifting.','w-heb-yarhipu'),
+   MC('יַחֲלוּ “shall renew their strength” is…',['Polel imperfect — a change of state','Qal perfect — done long ago','Hiphil — made by someone else','Niphal — passive'],0,'Polel of ḥālal “be strong”: not adding fuel to old fire, but exchanging the fuel — the strength itself changes.','w-heb-yachalu'),
+   MC('The three negations of the verse are…',['lo yikhleh · lo ya’efu (and lo before both)','two negations only','one negation, repeated','negated with mē'],0,'“Not be weary, not be spent, not faint” — the promise is written in negations: what will NOT happen.','w-heb-yikhleh'),
+   LS('w-heb-kanaf',['w-heb-kanaf','w-heb-ayit','w-heb-yarhipu'],'That was כַּנְפֵי — wings: the shelter of Ps 91 and the soaring of Isaiah 40.'),
+   BD('“they shall mount up with wings as eagles”',['w-heb-yarhipu','w-heb-kanaf','w-heb-kaf','w-heb-ayit'],['w-heb-yirtsa','w-heb-yagu','w-heb-yachalu']),
+   VER('v-heb-isa-40-31') ]),
 L('grc-v3','grc-nt','vocab','☀️','Light of the World','Matthew 5:14 & John 1:5',
  [ "<h4>ὑμεῖς ἐσθέ τὸ φῶς</h4><div class='ex'>ὑμεῖς ἐσθέ τὸ φῶς τοῦ κόσμου · τὸ φῶς ἐν τῇ σκοτίᾳ λαμπέι· καὶ ἡ σκοτία αὐτὸ οὐ κατέλαβεν</div>“Ye are the light of the world” (Matt 5:14). And John’s prologue: “And the light shineth in darkness; and the darkness comprehended it not” (Jhn 1:5). One light, two witnesses.",
    "<h4>Articles do the work</h4>τὸ φῶς — “THE light.” The Greek article (ὁ / ἡ / τό) does the work of English “the”; drop it, and the verse loses its weight."],
@@ -179,6 +202,29 @@ L('arc-g1','arc','grammar','🏛️','Aramaic of the Bible','Daniel 2 & the suff
 
 /* ================= LATIN (VULGATE) ================= */
 
+
+L('grc-v4','grc-nt','vocab','🕯️','I Am the Light','John 8:12 — the light of life',
+ [ "<h4>ΕΓΩ ΕΙΜΙ ΤΟ ΦΩΣ</h4><div class='ex'>ΕΓΩ ΕΙΜΙ ΤΟ ΦΩΣ ΤΟΥ ΚΟΣΜΟΥ. ΚΑΙ Ο ΑΚΟΛΟΥΘΩΝ ΜΟΥ ΟΥΚ ΕΝ ΣΚΟΤΙΑ ΠΕΡΙΠΑΤΗΣΕΙ, ΑΛΛ ΕΧΕΙ ΦΩΣ ΖΩΗΣ.</div>“I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.”",
+   "<h4>Walking, not visiting</h4>Peripatēsei is not a stroll — it is the verb of a WAY OF LIFE (like Heb lkh, the walk of Isa 40:31). And akolouthōn — “he who FOLLOWS” — is a participle: following as a habit, not a decision."],
+ [ M([['w-grc-akolouthon','he who follows'],['w-grc-peripatēseis','he will walk'],['w-grc-skote','in darkness'],['w-grc-me','me'],['w-grc-exei','he will have'],['w-grc-zoe','life']]),
+   MC('σκοτίᾳ (skotíā) in “shall not walk in darkness” is which case?',['dative (of place)','accusative (direct object)','genitive (possession)','nominative (subject)'],0,'The dative does the work of “in” — place by case, not by preposition (here with en).','w-grc-skote'),
+   MC('ἀκολούθων — “he that followeth” — is…',['a present participle (ongoing following)','a one-time aorist','an imperative','a noun'],0,'Present participle: the follower keeps following. “Follow” as a way of life, like περιπατέω right beside it.','w-grc-akolouthon'),
+   MC('The verb of Isa 40:31’s walk (לָכַך) and Jhn 8:12’s walk share a family in…',['Hebrew lkh + Greek peripateō + akolouthō (to follow)','Greek only','Latin only','Aramaic'],0,'The fam-follow family: walk (Heb/Gk) + follow (Gk) — one movement of life across the languages.','w-grc-peripatēseis'),
+   LS('w-grc-akolouthon',['w-grc-akolouthon','w-grc-peripatēseis','w-grc-phos'],'That was ἀκολούθων — “he who follows.”'),
+   BD('“he that followeth me shall not walk in darkness”',['w-grc-akolouthon','w-grc-mou','w-grc-mē','w-grc-en','w-grc-skote','w-grc-peripatēseis'],['w-grc-phos','w-grc-exei','w-grc-zoe']),
+   VER('v-grc-jhn-8-12') ]),
+
+L('grc-v5','grc-nt','vocab','🫱','Come, Be Rested','Matthew 11:28 & Romans 8:28',
+ [ "<h4>ΕΡΧΕΣΘΕ ΠΡΟΣ ΜΕ</h4><div class='ex'>ΕΡΧΕΣΘΕ ΠΡΟΣ ΜΕ ΠΑΝΤΕΣ ΟΙ ΚΟΠΩΝΤΕΣ ΚΑΙ ΠΕΦΟΡΤΙΣΜΕΝΟΙ, ΚΑΙ ΕΓΩ ΑΝΑΠΑΥΣΩ ΥΜΑΣ · ΟΙΔΑΜΕΝ ΟΤΙ ΠΑΝΤΑ ΣΥΝΕΡΓΑΖΕΤΑΙ ΕΙΣ ΑΓΑΘΟΝ</div>“Come unto me, all ye that labour and are heavy laden, and I will give you rest.” — and the engine behind it: “we know that all things work together for good.”",
+   "<h4>Two verbs that carry the gospel</h4>Erchesthe — “COME” — an invitation with a direction (pros me, toward me). Anapaussō — “I will give rest” — the aorist of rest: the day’s work, finished. And in Romans the sum: synergazetai, “all things work TOGETHER.”"],
+ [ M([['w-grc-erchesthe','come (you pl.)'],['w-grc-kopontes','those who toil'],['w-grc-pherontes','laden; bearing'],['w-grc-zygon','yoke'],['w-grc-praeis','gentle'],['w-grc-anapauso','I will give rest']]),
+   MC('πεφορτισμένοι — “heavy laden” — is…',['a perfect passive participle (already loaded)','a present active participle','an aorist imperative','a noun'],0,'Perfect passive: the load is on them already, and it is heavy. The yoke offer comes to people who are already under weight.','w-grc-pherontes'),
+   MC('“my yoke is easy” — ζυγόν (zygōn) is…',['the ox-team’s yoke','a crown','a chain','a plow'],0,'The yoke joins the team to the load — and to the driver. Easy yoke: a better team-mate, not no load.','w-grc-zygon'),
+   MC('οἴδαμεν (Rom 8:28) “we know” is which tense form?',['perfect — settled knowledge','aorist — one-time past','future — coming','present — now, always'],0,'Perfect of οἶδᾶ: knowledge already banked by experience — not a guess, a possession.','w-grc-oidamen'),
+   LS('w-grc-anapauso',['w-grc-anapauso','w-grc-zygon','w-grc-erchesthe'],'That was ἀναπαύσω — “I will give you rest.”'),
+   BD('“come unto me, all ye that labour”',['w-grc-erchesthe','w-grc-pros','w-grc-me','w-grc-pas','w-grc-art-ho','w-grc-kopontes'],['w-grc-zygon','w-grc-praeis','w-grc-anapauso']),
+   VER('v-grc-mat-11-28'),
+   VER('v-grc-rom-8-28') ]),
 L('arc-v2','arc','vocab','👑','King & Kingdom','Daniel 2:44 — the court’s Aramaic',
  [ "<h4>מַלְכָּא → מַלְכוּתָא</h4><div class='ex'>וּבִזְמַן מַלְכֵי יִיחַד אֱלָהָא דִשְׁמַיָּא מַלְכוּתָא וְלָא תִפְרֵץ לְעָלְמָא</div>“And in the days of these kings shall the God of heaven set up a kingdom, which shall never be destroyed.” The Aramaic of the royal court — and the word behind “thy kingdom come.”",
    "<h4>King → Kingdom</h4>malkā (“king”) + a feminine ending = malkhūtā (“kingdom”). One root (מלק) builds both words. In Daniel’s vision the kings of the world share the stage — and the God of heaven brings ONE kingdom."],
@@ -225,6 +271,19 @@ L('lat-g1','lat','grammar','📐','Cases & Tenses','From Psalm 23 & John 1',
    MC('DEERIT (“I shall not want”) is which tense?',['Future','Perfect','Present','Imperfect'],0,'Future of dēesse: “it shall be lacking.” The Shepherd’s promise is forward-looking.','w-lat-deesse'),
    MC('AETERNAM (John 3:16) is…',['feminine accusative singular','masculine nominative singular','neuter ablative','feminine genitive'],0,'It must match vitam: fem. acc. sg. — “eternal life” = vitam aeternam.') ]),
 
+
+L('arc-v3','arc','vocab','🔥','God of Gods','Daniel 2:47 & 3:25 — the court & the furnace',
+ [ "<h4>אֱלָהָךְ דֵּי אֱלָהִין</h4><div class='ex'>אֱלָהָךְ דֵּי אֱלָהִין מַלְכָּא דִמַּלְכָּא · חָזֵית שְׁבַע אֱנָשׁוֹהַת בְּתוֹךְ נָרוּ</div>“Thy God is God of gods, and Lord of kings” — the king’s own confession. And the vision beside it: “I saw seven men… in the midst of the fire.”",
+   "<h4>Six men, seven</h4>Three friends bound (enash), and the furnace doing its work (nar). But Daniel’s eyes count seven — the fourth, “like a son of the gods” (ilahin), walking in the MIDDLE (btôk) of it. The fire had company."],
+ [ M([['w-arc-ilahin','gods'],['w-arc-elaha','God'],['w-arc-malka','king; kings'],['w-arc-chazet','I saw'],['w-arc-shab','seven'],['w-arc-naru','fire']]),
+   MC('אֱלָהִין (ilahin) — “God of gods” — is…',['the plural of elāhā “God”','a different word for “angels”','the dual of “two gods”','a title only for idols'],0,'ilahin = the plural of elāhā. “God of gods” is Aramaic’s superlative: the God above every god, even above the gods of the kings.','w-arc-ilahin'),
+   MC('חָזֵית (ḥāzēṯ) — “I saw” — is…',['Qal perfect 1cs (a past, done-seeing)','imperfect (habitual)','an imperative “look!”','a participle'],0,'Perfect, 1cs: Daniel’s eyewitness formula. The court reports visions; Daniel reports seeing.','w-arc-chazet'),
+   MC('בְּתוֹךְ (btôk) — the fourth man walked…',['in the MIDDLE of the fire','above the fire','around the fire’s rim','outside, calling in'],0,'btôk = “in the midst of”: not above the trial, not around it — inside it, walking.','w-arc-btuch'),
+   LS('w-arc-naru',['w-arc-naru','w-arc-enash','w-arc-shab'],'That was נָרוּ — the fire. The furnace was doing its work.'),
+   BD('“thy God is God of gods”',['w-arc-elaha','w-arc-di','w-arc-ilahin'],['w-arc-malka','w-arc-chazet','w-arc-shab']),
+   VER('v-arc-dan-2-47'),
+   VER('v-arc-dan-3-25'),
+   TREE('v-arc-dan-2-47') ]),
 L('lat-v3','lat','vocab','🐏','The Shepherd','Psalm 23:2 in the Vulgate',
  [ "<h4>IN PASCUIS … PASCET</h4><div class='ex'>In pascuis, ubi habitat me, pascet; super aquam quietis, ibi me convertet.</div>“He maketh me to lie down in green pastures: he leadeth me beside the still waters.” The shepherd-verb appears twice — pascuus (pastures) and pascet (he shall feed) — from one root, pāscere.",
    "<h4>Adverbs place the scene</h4>UBI (“where”) opens the first clause; IBI (“there”) opens the second. One adverb pair draws the whole picture: WHERE he makes me dwell, THERE he refreshes me."],
@@ -235,15 +294,30 @@ L('lat-v3','lat','vocab','🐏','The Shepherd','Psalm 23:2 in the Vulgate',
    MC('QUIETIS (“of stillness”) is which case?',['genitive','ablative','accusative','dative'],0,'quiētis is the genitive of quietēs “stillness” — “water OF stillness” (aquam quietis); the genitive dresses the noun.','w-lat-quietus'),
    BD('“beside the still waters he refreshes me”',['w-lat-super','w-lat-aqua','w-lat-quietus','w-lat-mi','w-lat-convertet'],['w-lat-ubi','w-lat-pascet','w-lat-et']),
    VER('v-lat-ps-23-2'),
-   TREE('v-lat-ps-23-2') ])
+   TREE('v-lat-ps-23-2') ]),
+
+L('lat-v4','lat','vocab','⚖️','I Shall Not Want','Psalm 23:1 & 119:105 — three tongues, one promise',
+ [ "<h4>DOMINUS PASCIT ME</h4><div class='ex'>Dominus pascit me; nihil mihi deerit · Lumen pedibus meis verbum tuum; et lux semitae meae.</div>“The LORD is my shepherd; I shall not want. A lamp unto my feet is thy word; and a light unto my path.”",
+   "<h4>One verse, three witnesses</h4>The same promise in Hebrew, LXX, and Vulgate: rōʿî (Heb) · poimainei me (LXX) · pascit me (Lat) — SHEPHERDS. And “I shall not want”: echsar · ouden husterēso · nihil deerit — the fam-lack family, in three tongues. The light of Ps 119:105: nēr · lampas · lumen/lux."],
+ [ M([['w-lat-dominus','the LORD'],['w-lat-pascere','he feeds'],['w-lat-deesse','shall be lacking'],['w-lat-nihil','nothing'],['w-lat-lumen','light'],['w-lat-semita','path']]),
+   MC('nihil mihi deerit — “I shall not want” — the structure is…',['subject + dative + future verb','accusative + nominative + present','two nouns, no verb','a command'],0,'nihil (nothing) is the subject; mihi (to me) is dative; deerit is future: “nothing shall be lacking to me.”','w-lat-deesse'),
+   MC('Which is the LXX “I shall lack nothing”?',['ouden husterēso','poimainei me','kyrios me','phōs zeōs'],0,'ouden = “nothing,” husterēso = “I shall lack” — the LXX of אֶחְסָר, and of the Vulgate’s deerit: one family of “not lacking.”','w-lxx-hestereso'),
+   MC('LUMEN (Ps 119:105) belongs to the same light-family as…',['Hebrew ʾôr + Greek phōs (fam-lux)','Hebrew shalom + Greek eirēnē','Hebrew ruach + Greek pneuma','Aramaic shamaya + Greek ouranos'],0,'Lumen and lux are kin (r-lat-lux); the fam-lux family: ʾôr · phōs · lux/lumen — and the lamps ner · lampas beside them.','w-lat-lumen'),
+   MC('SEMITAE (“unto my path”) is which case?',['genitive','dative','ablative','accusative'],0,'semitae = genitive of semita “path” — “a light of my path” (lux semitae meae).','w-lat-semita'),
+   LS('w-lat-pascere',['w-lat-pascere','w-lxx-poimainei','w-lat-dominus'],'That was PASCIT — “he feeds.” The Vulgate’s shepherd.'),
+   BD('“the LORD is my shepherd; I shall not want”',['w-lat-dominus','w-lat-pascere','w-lat-mi','w-lat-nihil','w-lat-mi','w-lat-deesse'],['w-lat-lumen','w-lat-semita','w-lat-tuus']),
+   VER('v-lat-ps-23-1'),
+   VER('v-lxx-ps-23-1'),
+   VER('v-lat-ps-119-105'),
+   TREE('v-lat-ps-23-1') ])
 ];
 
 /* ---------- path per language (order of the learning path, §5) ---------- */
 var LABELS = {
-  'heb-alph':'Alphabet','heb-v1':'Genesis 1:1','heb-v2':'Light','heb-v3':'Chaos','heb-v4':'Shepherd','heb-g1':'Nouns','heb-g2':'Verbs',
-  'grc-alph':'Alphabet','grc-v1':'John 1:1','grc-v2':'John 3:16','grc-v3':'Light','grc-g1':'Cases','grc-g2':'Tenses',
-  'arc-alph':'Alphabet','arc-v1':'Phrasebook','arc-v2':'Kingdom','arc-g1':'Daniel 2',
-  'lat-alph':'Alphabet','lat-v1':'John 1:1','lat-v2':'John 3:16','lat-v3':'Shepherd','lat-g1':'Cases & Tenses'
+  'heb-alph':'Alphabet','heb-v1':'Genesis 1:1','heb-v2':'Light','heb-v3':'Chaos','heb-v4':'Shepherd','heb-v5':'Light','heb-v6':'Eagles','heb-g1':'Nouns','heb-g2':'Verbs',
+  'grc-alph':'Alphabet','grc-v1':'John 1:1','grc-v2':'John 3:16','grc-v3':'Light of the World','grc-v4':'Light','grc-v5':'Rest','grc-g1':'Cases','grc-g2':'Tenses',
+  'arc-alph':'Alphabet','arc-v1':'Phrasebook','arc-v2':'Kingdom','arc-v3':'God of Gods','arc-g1':'Daniel 2',
+  'lat-alph':'Alphabet','lat-v1':'John 1:1','lat-v2':'John 3:16','lat-v3':'Shepherd','lat-v4':'Not Want','lat-g1':'Cases & Tenses'
 };
 function pathFor(lang){
   var les = LESSONS.filter(function(l){ return l.lang === lang; });

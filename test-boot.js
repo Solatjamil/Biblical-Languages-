@@ -81,6 +81,10 @@ const routes = [
   '#/lesson/grc-v1', '#/lesson/arc-v1', '#/lesson/lat-v2',
   '#/lesson/heb-v3', '#/lesson/heb-v4', '#/lesson/grc-v3', '#/lesson/arc-v2', '#/lesson/lat-v3',
   '#/lesson/heb-v5', '#/lesson/heb-v6', '#/lesson/grc-v4', '#/lesson/grc-v5', '#/lesson/arc-v3', '#/lesson/lat-v4',
+  '#/lesson/heb-g3', '#/lesson/heb-g4', '#/lesson/heb-g5', '#/lesson/heb-v7', '#/lesson/heb-v8', '#/lesson/heb-v9',
+  '#/lesson/grc-g3', '#/lesson/grc-g4', '#/lesson/grc-v6', '#/lesson/grc-v7', '#/lesson/grc-v8', '#/lesson/grc-v9',
+  '#/lesson/arc-v4', '#/lesson/arc-v5', '#/lesson/arc-v6', '#/lesson/arc-g2', '#/lesson/arc-v7',
+  '#/lesson/lat-g2', '#/lesson/lat-g3', '#/lesson/lat-v5', '#/lesson/lat-v6', '#/lesson/lat-v7',
   '#/srs', '#/quiz', '#/parse', '#/lexicon', '#/translate',
   '#/profile', '#/owner', '#/about', '#/verses/grc-nt', '#/verses/arc', '#/verses/lat'
 ];
